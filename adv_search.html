@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>My Google Search</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            #adv_sub {
+                background-color: gainsboro;
+                border-width: 3px;
+                border-color: darkblue;
+                font-weight: 500;
+            }
+            /* https://www.google.com/search?as_q=estas+son+todas+las+palabras&as_epq=&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=
+               https://www.google.com/search?as_q=poema+poemas+versos+lirica&as_epq=podria+escribir+los+versos+mas+tristes&as_oq=&as_eq=&as_nlo=&as_nhi=&lr=&cr=&as_qdr=all&as_sitesearch=&as_occt=any&safe=images&as_filetype=&tbs=
+            */
+            h2 {
+                color:grey;
+            }
+
+            h4 {
+                color:red;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container mt-4">
+            <div class="row">
+                <div class="col-auto rounded-pill border border-3">
+                    <div class="row p-1">
+                        <div class="col-3 m-auto">
+                            <div class="row">
+                            <img src="google_logo.png" class="img-fluid float-left" alt="Logotipo google">
+                            </div>
+                        </div>
+                        <div class="col-auto m-auto">
+                            <div class="row">
+                            <h2>Advance Search</h2>
+                            </div>
+                        </div>
+                        <div class="col-auto m-auto">
+                            <div class="row align-items-end">
+                            <button class="rounded-pill p-2" onclick="history.back ()" >Back to <br>Google Search</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-7 border-top border-2">
+                    <form action="https://google.com/search">
+                        <h4>Show pages that contain...</h4>
+                        <div class="row">
+                            <div class="col-auto me-5">
+                                All these words:
+                            </div>
+                            <div class="col ms-3">
+                                <input type="text" class="form-control" name="as_q">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto mt-1">
+                                This exact word or phrase:
+                            </div>
+                            <div class="col">
+                                <input type="text" class="form-control mt-1" name="as_epq">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto mt-1">
+                                Any of these words:
+                            </div>
+                            <div class="col ms-5">
+                                <input type="text" class="form-control mt-1" name="as_oq">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-auto mt-1">
+                                None of these words:
+                            </div>
+                            <div class="col ms-4">
+                                <input type="text" class="form-control mt-1" name="as_eq">
+                            </div>
+                        </div>
+                        <div class="row justify-content-end">
+                            <div class="col-auto mt-1">
+                                <input type="submit" class="form-control" value="Advance Search" id="adv_sub">
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </body>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Imagen Google Search</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            #t_imagen {
+                color: darkblue;
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: bolder;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div class="row justify-content-end">
+                <div class="col-auto">
+                    <button class="rounded-pill mt-2" onclick="history.back ()" >Back to <br>Google Search</button>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col">
+                    <img src="google_logo.png" class="rounded mx-auto d-block float-sm-none" alt="Logotipo Google">
+                </div>
+            </div>
+            <div id="t_imagen" class="row justify-content-center">
+                Imagen
+            </div>
+            <form action="https://google.com/search" class="row justify-content-center">
+                <div class="col-6">
+                    <input class="form-control rounded-pill m-2" type="text" name="q" required>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-auto mt-2">
+                        <input type="submit" class="form-control rounded-pill" value="Imagen Search">
+                    </div>
+                </div>
+                <input type="hidden" name="tbm" value="isch">
+            </form>
+        </div>
+    </body>
