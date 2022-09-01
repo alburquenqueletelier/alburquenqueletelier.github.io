@@ -1,62 +1,22 @@
 body {
-    color: rgb(250, 218, 218);
+  color: rgb(250, 218, 218);
 }
 
-.img-carousel {
-    width: fit-content;
-    height: 300px;
+
+#presentacion {
+  height: 300px;
 }
 
-#carouselExampleCaptions {
-    align-self: center;
-    max-width: 90vw;
+div.card {
+  background: rgb(109, 111, 241);
 }
 
-#main-container {
-    background-image: url("https://media1.giphy.com/media/D35fOVm9gSQ91icJeR/giphy.gif?cid=ecf05e47f48malws39qvg7d8lisp6jjcv6nzy24zp4x83l6a&rid=giphy.gif&ct=g");
-    background-repeat: no-repeat;
-    background-size: cover;
+div.card:nth-child(odd) {
+  background: rgb(74, 75, 141);
 }
 
-#rotator {
-    position: relative;
-    width: 7rem;
-    height: 7rem;
-    animation: rotations 6s linear infinite;
-    border: 1px orange dashed;
-    border-radius: 50%;
-    margin: 3rem;
+@media only screen and (max-width: 551px) {
+  #presentacion {
+    height: fit-content;
   }
-  
-  #rotator:before, #rotator:after {
-    position: absolute;
-    content: '';
-    display: block;
-    height: 3rem;
-    width: 3rem;
-    animation: inherit;
-    animation-direction: reverse;
-  }
-  
-  #rotator:before {
-    background-color: red;
-    top: -.25rem;
-    left: -.25rem;
-  }
-  
-  #rotator:after {
-    background-color: green;
-    bottom: -.25rem;
-    right: -.25rem;
-  }
-  
-  
-  @keyframes rotations {
-    to { transform: rotate(360deg) }
-  }
-
-@media only screen and (max-width: 1050px) {
-    #main-container {
-        background-size: contain;
-    }
 }

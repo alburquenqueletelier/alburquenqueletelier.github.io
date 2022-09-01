@@ -11,27 +11,39 @@
 </head>
 
 <body>
-    <div id="main-container" class="container-fluid">
+    <div class="container-fluid">
         <!--  <div id="liveAlertPlaceholder"></div>
 <button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button> -->
-        <!-- Nav -->
 
-        <nav class="navbar navbar-expand-sm sticky-top bg-light">
+        <!-- Nav -->
+        <nav class="navbar navbar-expand-sm sticky-top bg-primary row">
             <div class="container-fluid">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">About me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
-                    </li>
-                </ul>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About me</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact</a>
+                        </li>
+                    </ul>
+
+                </div>
             </div>
         </nav>
-        <section class="row justify-content-evenly pt-3 align-items-center">
+        <!-- Nav -->
+
+        <!-- Presentacion -->
+        <section id="presentacion"
+            class="row justify-content-evenly p-5 align-items-center bg-dark border border-primary">
             <div class="col-auto">
                 <img class="rounded-circle" src="https://dummyimage.com/200x200/e0a6e0/535cd9" alt="foto-perfil">
             </div>
@@ -40,65 +52,113 @@
                 <h2>Full Stack Developer</h2>
             </div>
         </section>
-        <!-- Body -->
-        <section id="projects-section">
-            <div class="row mt-5 mb-5">
-                <h1 class="text-center">Projects</h1>
+        <!-- Presentacion -->
+        <!-- Acerca de mi -->
+        <section class="row justify-content-center align-items-center text-center bg-dark border border-primary">
+            <p>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#professional-profile"
+                    aria-expanded="false" aria-controls="professional-profile">Professional Profile</button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#skills" aria-expanded="false"
+                    aria-controls="skills">Toggle second element</button>
+                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#stack" aria-expanded="false"
+                    aria-controls="stack">Toggle second element</button>
+                
+            </p>
+            <div class="row">
+                <div class="col">
+                    <div class="collapse multi-collapse" id="professional-profile">
+                        <div class="card card-body">
+                            <h5 class="card-title text-primary">Full Stack Developer - 4Geeks Academy</h5>
+                            <p class="card-text">Web development with Python and Javascript</p>
+                            <p class="card-text"><small class="text-muted">April 2022 - September 2022</small></p>
+                            <hr>
+                            <h5 class="card-title text-primary">CS50W - Harvard University</h5>
+                            <p class="card-text">Web programming with Python and Javascript</p>
+                            <p class="card-text"><small class="text-muted">November 2021 - Abril 2022</small></p>
+                            <hr>
+                            <h5 class="card-title text-primary">Industrial Civil Engineer -  Adolfo Ibáñez University</h5>
+                            <p class="card-text">Mention IT</p>
+                            <p class="card-text"><small class="text-muted">March 2014 - July 2020</small></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="skills">
+                        <div class="card card-body">
+                            Some placeholder content for the second collapse component of this multi-collapse example.
+                            This panel is hidden by default but revealed when the user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="collapse multi-collapse" id="stack">
+                        <div class="card card-body">
+                            Some placeholder content for the second collapse component of this multi-collapse example.
+                            This panel is hidden by default but revealed when the user activates the relevant trigger.
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
-
-        <div id="rotator"></div>
-        <div class="row justify-content-center">
-            <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="false">
-                <div class="carousel-indicators">
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
-                        aria-current="true" aria-label="Slide 1"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
-                        aria-label="Slide 2"></button>
-                    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
-                        aria-label="Slide 3"></button>
-                </div>
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="https://dummyimage.com/200x200/000/fff" class="d-block w-100 img-carousel rounded"
-                            alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>First slide label</h5>
-                            <p>Some representative placeholder content for the first slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://dummyimage.com/200x200/000/fff" class="d-block w-100 img-carousel rounded"
-                            alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Second slide label</h5>
-                            <p>Some representative placeholder content for the second slide.</p>
-                        </div>
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://dummyimage.com/200x200/000/fff" class="d-block w-100 img-carousel rounded"
-                            alt="...">
-                        <div class="carousel-caption d-none d-md-block">
-                            <h5>Third slide label</h5>
-                            <p>Some representative placeholder content for the third slide.</p>
-                        </div>
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+        <!-- Acerca de mi -->
+        <!-- Projects -->
+        <section class="row border border-primary bg-dark p-3">
+            <div class="row">
+                <h1 class="text-center">Projects</h1>
             </div>
-        </div>
 
+            <div class="card mb-2">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="..." class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-2">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="..." class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="card mb-2">
+                <div class="row g-0">
+                    <div class="col-md-4">
+                        <img src="..." class="img-fluid rounded-start" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h5 class="card-title">Card title</h5>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <!-- Projects -->
         <!-- Footer -->
-        <footer class="footer py-3 text-center border-top border-secondary bg-dark text-white">
+        <footer class="footer py-3 text-center border-top border-secondary bg-dark text-white row">
             <p class="m-0">Created By: <strong>Bryan Alburquenque</strong></p>
             <div class="row justify-content-center">
                 <div class="col-auto">
