@@ -1,22 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
+
 body {
-  color: rgb(250, 218, 218);
+  color: rgb(245, 197, 197);
+  font-family: 'Oswald', sans-serif;
 }
 
+section p.ps-5 {
+  max-width: 60rem;
+}
+
+label {
+  font-size: large;
+}
+
+#formulario-google {
+  background-image: url("https://cdn-icons-png.flaticon.com/512/2245/2245089.png");
+  background-size: contain;
+  height: 530px;
+}
+
+#professional-profile .card {
+  background: #0d6efd;
+}
+#experience .card {
+  background: #198754;
+}
+#skills .card {
+  background: #dc3545;
+}
+#stack .card {
+  background: #ffc107;
+}
+
+#proyectos .row.justify-content-center .card {
+  background: rgb(109, 111, 241);
+  width: 64rem;
+}
+
+#proyectos .row.justify-content-center:nth-child(odd) .card {
+  background: rgb(74, 75, 141);
+}
 
 #presentacion {
   height: 300px;
 }
 
-div.card {
-  background: rgb(109, 111, 241);
-}
 
-div.card:nth-child(odd) {
-  background: rgb(74, 75, 141);
-}
-
-@media only screen and (max-width: 551px) {
+@media only screen and (max-width: 887px) {
   #presentacion {
     height: fit-content;
+  }
+}
+
+@media only screen and (max-width: 456px) {
+  #presentacion .col-auto .row .col-auto h5{
+    font-size: 3vw;
   }
 }

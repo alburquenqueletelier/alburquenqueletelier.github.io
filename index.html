@@ -12,9 +12,6 @@
 
 <body>
     <div class="container-fluid">
-        <!--  <div id="liveAlertPlaceholder"></div>
-<button type="button" class="btn btn-primary" id="liveAlertBtn">Show live alert</button> -->
-
         <!-- Nav -->
         <nav class="navbar navbar-expand-sm sticky-top bg-primary row">
             <div class="container-fluid">
@@ -34,6 +31,9 @@
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contact</a>
                         </li>
+                        <li class="nav-item">
+                            <div id="google_translate_element"></div>
+                        </li>
                     </ul>
 
                 </div>
@@ -44,55 +44,103 @@
         <!-- Presentacion -->
         <section id="presentacion"
             class="row justify-content-evenly p-5 align-items-center bg-dark border border-primary">
-            <div class="col-auto">
-                <img class="rounded-circle" src="https://dummyimage.com/200x200/e0a6e0/535cd9" alt="foto-perfil">
+            <div class="col-auto text-center">
+                <img width="200px" class="rounded-circle" src="https://res.cloudinary.com/baal1992/image/upload/v1662046963/fotoperfil_h2533z.jpg" alt="foto-perfil">
+                <p style="font-size: x-large;">BAAL</p>
             </div>
-            <div class="col-auto">
-                <h1>Bryan Alburquenque</h1>
+            <div class="col-auto text-center">
+                <h1>Bryan Abel Alburquenque Letelier</h1>
                 <h2>Full Stack Developer</h2>
+                <div class="row">
+                    <div class="col-auto">
+                        <h5>
+                            <img class="mb-1" width="25px" src="https://cdn-icons-png.flaticon.com/512/5649/5649647.png" alt="whatsapp-icon"/>+56 9 79577547
+                        </h5>
+                    </div>
+                    <div class="col-auto">
+                        <h5>
+                            <img width="22px" src="https://cdn-icons-png.flaticon.com/512/3178/3178283.png" alt="email-icon"/> alburquenque.letelier@gmail.com
+                        </h5>
+                    </div>
+                </div>
             </div>
         </section>
         <!-- Presentacion -->
         <!-- Acerca de mi -->
-        <section class="row justify-content-center align-items-center text-center bg-dark border border-primary">
+        <section class="row justify-content-center align-items-center text-center bg-dark border border-primary pt-3 pb-3">
+            <p class="ps-5 pe-5">
+                <i>
+                "I am a junior Full Stack Developer from 4Geeks Academy. I am also a Civil Industrial Engineer with an IT major from Universidad Adolfo Ibáñez.
+                I use Python and Javascript to develop web applications since 2021. My forte is the back-end, discovering the necessary models to
+                implement business logic, I also have front-end skills, applying resizing of objects according to platform and customization (color, shape, distribution).
+                I would like to work in a fintech or software development start-up because of the challenges I would have to overcome, which would improve my
+                Professional skills."
+                </i>
+            </p>
             <p>
                 <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#professional-profile"
                     aria-expanded="false" aria-controls="professional-profile">Professional Profile</button>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                <button class="btn btn-success" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#experience" aria-expanded="false"
+                    aria-controls="experience">Experience</button>
+                <button class="btn btn-danger" type="button" data-bs-toggle="collapse"
                     data-bs-target="#skills" aria-expanded="false"
-                    aria-controls="skills">Toggle second element</button>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse"
+                    aria-controls="skills">Skills</button>
+                <button class="btn btn-warning" type="button" data-bs-toggle="collapse"
                     data-bs-target="#stack" aria-expanded="false"
-                    aria-controls="stack">Toggle second element</button>
+                    aria-controls="stack">Stack</button>
                 
             </p>
             <div class="row">
-                <div class="col">
+                <div class="col-md-3 col-sm-6">
                     <div class="collapse multi-collapse" id="professional-profile">
                         <div class="card card-body">
-                            <h5 class="card-title text-primary">Full Stack Developer - 4Geeks Academy</h5>
+                            <h5 class="card-title">Full Stack Developer - 4Geeks Academy</h5>
                             <p class="card-text">Web development with Python and Javascript</p>
                             <p class="card-text"><small class="text-muted">April 2022 - September 2022</small></p>
                             <hr>
-                            <h5 class="card-title text-primary">CS50W - Harvard University</h5>
+                            <h5 class="card-title">CS50W - Harvard University</h5>
                             <p class="card-text">Web programming with Python and Javascript</p>
                             <p class="card-text"><small class="text-muted">November 2021 - Abril 2022</small></p>
                             <hr>
-                            <h5 class="card-title text-primary">Industrial Civil Engineer -  Adolfo Ibáñez University</h5>
+                            <h5 class="card-title">Industrial Civil Engineer -  Adolfo Ibáñez University</h5>
                             <p class="card-text">Mention IT</p>
                             <p class="card-text"><small class="text-muted">March 2014 - July 2020</small></p>
                         </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="collapse multi-collapse" id="skills">
+                <div class="col-md-3 col-sm-6">
+                    <div class="collapse multi-collapse" id="experience">
                         <div class="card card-body">
-                            Some placeholder content for the second collapse component of this multi-collapse example.
-                            This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            <h5 class="card-title">Business Developer - DiDi Food</h5>
+                            <p class="card-text">Customer loyalty area for restaurant chains, responsible for providing commercial and digital advice to increase their sales</p>
+                            <p class="card-text"><small class="text-muted">February 2022 - August 2022</small></p>
+                            <hr>
+                            <h5 class="card-title">Booster - Aldeas Infantiles SOS</h5>
+                            <p class="card-text">Recruiter of partners for NGO Aldeas Infantiles SOS</p>
+                            <p class="card-text"><small class="text-muted">December 2021 - January 2022</small></p>
+                            <hr>
+                            <h5 class="card-title">Sales Executive - VTR</h5>
+                            <p class="card-text">Sales executive for telecommunications company VTR, responsible for selling internet, telephony and TV services, attracting new customers.</p>
+                            <p class="card-text"><small class="text-muted">July 2021 - September 2022</small></p>
+                            <hr>    
                         </div>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md-3 col-sm-6">
+                    <div class="collapse multi-collapse" id="skills">
+                        <div class="card card-body">
+                            <ul class="list-group">
+                                <li class="list-group-item bg-transparent">Negotiating Capacity <img width="25px" src="https://cdn-icons-png.flaticon.com/512/2720/2720688.png" alt="negocio-icon" /></li>
+                                <li class="list-group-item"><img width="25px" src="https://cdn-icons-png.flaticon.com/512/5512/5512209.png" alt="escucha-activa" />Active Listening </li>
+                                <li class="list-group-item">Project Management <img width="25px" src="https://cdn-icons-png.flaticon.com/512/1087/1087840.png" alt="project-management" /></li>
+                                <li class="list-group-item"><img width="25px" src="https://cdn-icons-png.flaticon.com/512/4133/4133589.png" alt="problem-solver" /> Problem Solver</li>
+                                <li class="list-group-item">Agile Methodology <img width="25px" src="https://cdn-icons-png.flaticon.com/512/3853/3853002.png" alt="metodologia-agil" /></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-6">
                     <div class="collapse multi-collapse" id="stack">
                         <div class="card card-body">
                             Some placeholder content for the second collapse component of this multi-collapse example.
@@ -104,52 +152,60 @@
         </section>
         <!-- Acerca de mi -->
         <!-- Projects -->
-        <section class="row border border-primary bg-dark p-3">
+        <section id="proyectos" class="row border border-primary bg-dark p-3">
             <div class="row">
                 <h1 class="text-center">Projects</h1>
             </div>
 
-            <div class="card mb-2">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+            <div class="row justify-content-center">
+                <div class="card mb-2">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card mb-2">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+            <div class="row justify-content-center">
+                <div class="card mb-2">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="card mb-2">
-                <div class="row g-0">
-                    <div class="col-md-4">
-                        <img src="..." class="img-fluid rounded-start" alt="...">
-                    </div>
-                    <div class="col-md-8">
-                        <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                                additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+
+            <div class="row justify-content-center">
+                <div class="card mb-2">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="https://dummyimage.com/300x200/000/fff" class="img-fluid rounded-start" alt="...">
+                        </div>
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                                    additional content. This content is a little bit longer.</p>
+                                <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -157,9 +213,44 @@
 
         </section>
         <!-- Projects -->
+        <!-- Formulario contacto -->
+        <section id="formulario-google" class="bg-dark row ps-4">
+            <div class="d-flex justify-content-center align-items-center mt-5">
+                <div class="spinner-border text-primary d-none" style="width: 5rem; height: 5rem;" role="status">
+                  <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+            <div class="row justify-content-center align-items-center d-none" id="replayForm">
+                <div class="col-auto">
+                    <button class="btn btn-primary" onclick="displayForm()">New message</button>
+                </div>
+            </div>
+            <form name="submit-form" class="row justify-content-center py-3">
+                <div class="form-floating mb-3 col-6">
+                    <input name="email" type="email" class="form-control" id="floatingInput" placeholder="name@example.com" required>
+                    <label for="floatingInput">Your Email</label>
+                </div>
+                <div class="w-100"></div>
+                <div class="form-floating mb-3 col-6">
+                    <input name="subject" type="text" class="form-control" id="floatingSubject" placeholder="Meeting" required>
+                    <label for="floatingSubject">Subject</label>
+                </div>
+                <div class="w-100"></div>
+                <div class="form-floating col-6">
+                    <textarea name="message" style="height: 200px;" class="form-control" placeholder="Leave a comment here" id="floatingTextarea" required></textarea>
+                    <label for="floatingTextarea">Message</label>
+                </div>
+                <div class="w-100"></div>
+                <div class="col-auto">
+                    <button type="submit" class="btn btn-primary mt-3" id="liveAlertBtn">Send</button>
+                </div>
+            </form>
+            <div id="liveAlertPlaceholder" class="d-inline-flex justify-content-center"></div>
+        </section>
+        <!-- Formulario contacto -->
         <!-- Footer -->
         <footer class="footer py-3 text-center border-top border-secondary bg-dark text-white row">
-            <p class="m-0">Created By: <strong>Bryan Alburquenque</strong></p>
+            <p class="m-0">Created By: <strong>BAAL</strong></p>
             <div class="row justify-content-center">
                 <div class="col-auto">
                     <a href="https://wa.me/56979577547" class="btn" target="_blank">
@@ -190,12 +281,15 @@
         </footer>
         <!-- Footer -->
     </div>
+
     <!-- script page -->
     <script src="./javascript.js"></script>
     <!-- script de bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
         crossorigin="anonymous"></script>
+    <!-- script google translate -->
+    <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 </body>
 
 </html>
