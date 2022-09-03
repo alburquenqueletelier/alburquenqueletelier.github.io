@@ -13,7 +13,7 @@
 <body>
     <div class="container-fluid">
         <!-- Nav -->
-        <nav class="navbar navbar-expand-sm sticky-top bg-primary row">
+        <nav class="navbar navbar-expand-sm bg-primary row sticky-top">
             <div class="container-fluid">
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
@@ -44,13 +44,13 @@
 
         <!-- Presentacion -->
         <section id="presentacion"
-            class="row justify-content-evenly p-5 align-items-center bg-dark border border-primary">
+            class="row justify-content-evenly align-items-center bg-dark border border-primary">
             <div class="col-auto text-center">
                 <img width="200px" class="rounded-circle" src="https://res.cloudinary.com/baal1992/image/upload/v1662046963/fotoperfil_h2533z.jpg" alt="foto-perfil">
                 <p style="font-size: x-large;">BAAL</p>
             </div>
             <div class="col-auto text-center">
-                <h1>Bryan Abel Alburquenque Letelier</h1>
+                <h1 class="text-gradient"><span>Bryan</span> <span>Abel</span> <span>Alburquenque</span> <span>Letelier</span></h1>
                 <h2>Full Stack Developer</h2>
                 <div class="row">
                     <div class="col-auto">
@@ -92,8 +92,8 @@
                     aria-controls="stack">Stack</button>
                 <button class="btn btn-light" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="professional-profile experience skills stack">Toggle All</button>
             </p>
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
+            <div class="row row-cols-1 row-cols-md-4">
+                <div class="col">
                     <div class="collapse multi-collapse" id="professional-profile">
                         <div class="card card-body">
                             <h5 class="card-title">Full Stack Developer - 4Geeks Academy</h5>
@@ -110,7 +110,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col">
                     <div class="collapse multi-collapse" id="experience">
                         <div class="card card-body">
                             <h5 class="card-title">Business Developer - DiDi Food</h5>
@@ -128,7 +128,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col">
                     <div class="collapse multi-collapse" id="skills">
                         <div class="card card-body">
                             <ul class="list-group">
@@ -141,7 +141,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-3 col-sm-6">
+                <div class="col">
                     <div class="collapse multi-collapse" id="stack">
                         <div class="card card-body">
                             Some placeholder content for the second collapse component of this multi-collapse example.

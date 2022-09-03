@@ -13,6 +13,14 @@ label {
   font-size: large;
 }
 
+.text-gradient {
+  color: transparent;
+  background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
+  background-clip: text;
+  animation: color 3s linear infinite;
+  background-size: 100%;    
+}
+
 #formulario-google {
   background-image: url("https://cdn-icons-png.flaticon.com/512/2245/2245089.png");
   background-size: contain;
@@ -55,5 +63,15 @@ label {
 @media only screen and (max-width: 456px) {
   #presentacion .col-auto .row .col-auto h5{
     font-size: 3vw;
+  }
+}
+
+@keyframes color {
+  from {
+      background-position: 0% 50%;
+  }
+
+  to {
+      background-position: 100% 50%;
   }
 }
