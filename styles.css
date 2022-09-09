@@ -9,35 +9,22 @@ section p.ps-5 {
   max-width: 60rem;
 }
 
+section:nth-child(even) {
+  background: #363e44 !important;
+}
+
 label {
   font-size: large;
 }
 
-.text-gradient {
-  color: transparent;
-  background-image: linear-gradient(to left, #FFD700, #7B68EE, #3498db, #2ecc71, #FFD700);    
-  background-clip: text;
-  animation: color 3s linear infinite;
-  background-size: 100%;    
+.img-hobbies {
+  width: 100px;
 }
 
 #formulario-google {
   background-image: url("https://cdn-icons-png.flaticon.com/512/2245/2245089.png");
   background-size: contain;
   height: 530px;
-}
-
-#professional-profile .card {
-  background: #0d6efd;
-}
-#experience .card {
-  background: #198754;
-}
-#skills .card {
-  background: #dc3545;
-}
-#stack .card {
-  background: #ffc107;
 }
 
 #proyectos .row.justify-content-center .card {
@@ -66,12 +53,21 @@ label {
   }
 }
 
-@keyframes color {
+@keyframes background {
   from {
-      background-position: 0% 50%;
+    background-position: 0 0%;
   }
-
   to {
-      background-position: 100% 50%;
+    background-position: 0 -200px;
   }
+}
+#presentacion span {
+  color: #F2F5FE;
+  text-align: center;
+  line-height: 1;
+  background: -webkit-linear-gradient(transparent, transparent), url(https://media.giphy.com/media/3oKIPd3zYxNZd9jGpO/giphy.gif) repeat;
+  background-size: 100px auto;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  animation: background 10s infinite linear;
 }
