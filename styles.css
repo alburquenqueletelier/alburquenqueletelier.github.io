@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap');
 
 body {
-  color: rgb(245, 197, 197);
+  background: rgb(255, 255, 255);
   font-family: 'Oswald', sans-serif;
 }
 
@@ -9,12 +9,16 @@ section p.ps-5 {
   max-width: 60rem;
 }
 
-section:nth-child(even) {
+/* section:nth-child(even) {
   background: #363e44 !important;
-}
+} */
 
 label {
   font-size: large;
+}
+
+.img-icons {
+  width: 25px;
 }
 
 .img-hobbies {

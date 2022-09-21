@@ -14,7 +14,7 @@ function googleTranslateElementInit() {
 const alert = (message, type) => {
   const wrapper = document.createElement('div')
   wrapper.innerHTML = [
-    `<div class="alert alert-${type} alert-dismissible" role="alert">`,
+    `<div class="alert alert-${type} alert-dismissible fade show" role="alert">`,
     `   <div>${message}</div>`,
     '   <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>',
     '</div>'
@@ -26,7 +26,7 @@ const alert = (message, type) => {
 const displayForm = () => {
   form.className = formClass;
   form.reset();
-  replayForm.className = 'd-none';
+  divReplayForm.className = 'd-none';
   const alertPlaceholder = document.querySelector('.alert');
   alertPlaceholder.querySelector('button').click();
 }
@@ -40,14 +40,14 @@ form.addEventListener('submit', e => {
     .then(response => {
       alert('Thanks for contacting me. I will answer promptly. Good day! ☺', 'success');
       spinnerForm.className = spinnerClass + ' d-none';
-      replayForm.className = divReplayFormClass.replace("d-none", "");
+      divReplayForm.className = divReplayFormClass.replace("d-none", "");
     })
     .catch(error => {
       console.error('Error!', error.message);
       alert('Oops, something went wrong. Please try again', 'danger');
       form.reset();
       spinnerForm.className = spinnerClass + ' d-none';
-      replayForm.className = divReplayFormClass.replace("d-none", "");
+      divReplayForm.className = divReplayFormClass.replace("d-none", "");
     })
   
 })
