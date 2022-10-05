@@ -7,6 +7,30 @@ const divReplayForm = document.querySelector('#replayForm');
 const divReplayFormClass = divReplayForm.className;
 var language = document.getElementsByTagName("html")[0].getAttribute("lang");
 
+// window.onload = ()=>{
+//   loadPageBar();
+// }
+
+// const loadPageBar = ()=>{
+//   var bar = document.querySelector('.progress-bar');
+//   let loadFun;
+//   let i = 0;
+//   loadFun = setInterval(()=>{
+//     i++;
+//     bar.style.width = i+'%';
+//     bar.ariaValueNow = i;
+//     bar.innerHTML = i+'%';
+//     if (i == 100){
+//       document.querySelector(".progress").style.display = 'none';
+//       clearInterval(loadFun);
+//       loadFun = null;
+//       let page = document.querySelector('.container-fluid');
+//       page.className = "container-fluid";
+//     }
+//   }, 20)
+  
+// };
+
 function googleTranslateElementInit() {
   new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
 }
